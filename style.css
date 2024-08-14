@@ -1,0 +1,394 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-padding-top: 2rem;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    font-family: "Poppins", sans-serif;
+}
+
+:root {
+    --main-color: #9d4d07;
+    --second-color: #666c76;
+}
+
+section {
+    padding: 90px 10%;
+}
+
+*::selection {
+    color: #fff;
+    background: var(--main-color);
+}
+
+img {
+    width: 100%;
+}
+
+/* Header */
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    box-shadow: 0 4px 41px rgb(14 55 54 / 14%);
+    padding: 15px 10%;
+    transition: 0.2s;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 90px;
+}
+
+.navbar {
+    display: flex;
+}
+
+.navbar a {
+    font-size: 1rem;
+    padding: 11px 20px;
+    color: var(--main-color);
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.navbar a:hover {
+    color: #fff;
+    background-color: #e9a20a;
+}
+
+#menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1001;
+    display: none;
+}
+
+/* Home Section */
+.home {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background: #e9a20a;
+    gap: 1rem;
+}
+
+.home-text {
+    flex: 1 1 17rem;
+}
+
+.home-img {
+    flex: 1 1 17rem;
+}
+
+.home-img img {
+    animation: animate 3s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        transform: translate(-11px, 0);
+    }
+    50% {
+        transform: translate(0, -11px);
+    }
+    100% {
+        transform: translate(-11px, 0);
+    }
+}
+
+.home-text span {
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #fff;
+}
+
+.home-text h1 {
+    font-size: 3.2rem;
+    color: var(--main-color);
+    font-weight: bolder;
+}
+
+.home-text h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #fff;
+    text-transform: uppercase;
+    margin: 0.5rem 0 1.4rem;
+}
+
+/* Heading */
+.heading {
+    text-align: center;
+}
+
+.heading span {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--second-color);
+}
+
+.heading h1 {
+    font-size: 2rem;
+    color: var(--main-color);
+}
+
+.heading h2 {
+    color: darkorange;
+}
+
+/* Product Container */
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 5rem;
+}
+
+.product-container .box {
+    flex: 1 1 10rem;
+    background-color: var(--main-color);
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 3rem;
+    border-radius: 0.5rem;
+    transition: transform 0.3s ease-in-out;
+}
+
+.product-container .box:hover {
+    transform: translateY(-10px);
+    background: #ef9905;
+}
+
+.product-container .box .box-img1,
+.product-container .box .box-img2,
+.product-container .box .box-img3 {
+    width: 200px;
+    height: 200px;
+    margin: 20px 0 40px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.product-container .box .box-img1 img,
+.product-container .box .box-img2 img,
+.product-container .box .box-img3 img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.product-container .box:hover .box-img1 img,
+.product-container .box:hover .box-img2 img,
+.product-container .box:hover .box-img3 img {
+    transform: scale(1.05);
+}
+
+.product-container .box h2 {
+    color: burlywood;
+    font-size: 1.2rem;
+}
+
+.box:hover h2 {
+    color: var(--main-color);
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.tentang_kami{
+    background: #e9a20a;
+}
+
+.tentang_kami span{
+    font-size: 20px;
+}
+
+.tentang_kami-img, .lokasi-img{
+    flex: 1 1 21rem;
+}
+
+.tentang_kami-text, .lokasi-text{
+    flex: 1 1 21rem;
+}
+
+.tentang_kami-text h2{
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+.tentang_kami-text, .lokasi-text p{
+    margin: 0.5rem 0 1rem;
+    text-align: justify;
+}
+
+.tentang_kami .heading span{
+    color: #fff;
+}
+
+.lokasi-text{
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.lokasi-text p:hover{
+    color: #ff6347; 
+    text-decoration: double; 
+}
+
+.social a{
+    font-size: 27px;
+    margin: 0.5rem;
+}
+
+.kontak{
+    background: #666c76;
+    
+}
+
+.kontak .heading span{
+    font-size: 20px;
+    color: #fff;
+    display: inline;
+    padding-bottom: 1rem;
+}
+
+.kontak .heading h2{
+    display: flex;
+    padding-bottom: 1rem;
+}
+
+.social a .bx{
+    padding: 5px;
+    color: #fff;
+    background: rgb(17, 255, 0);
+    border-radius: 50%;
+}
+
+.social a .bx:hover{
+    background: #138a1b;
+}
+
+.social a span{
+    font-size: 1rem;
+    color: #fff;
+}
+
+.social a span:hover{
+    color: #000;
+}
+
+
+@media (max-width: 1150px){
+    header{
+        padding:18px 7%;
+    }
+    section{
+        padding: 50px 7%;
+    }
+    .home-text h1{
+        font-size: 3rem;
+    }
+    .home-text h2{
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 991px){
+    header{
+        padding:18px 4%;
+    }
+    section{
+        padding: 50px 4%;
+    }
+}
+
+@media (max-width: 768px){
+    header{
+        padding:11px 4%;
+    }
+    #menu-icon{
+        display: initial;
+    }
+
+    header .navbar{
+        position:absolute;
+        top: -500px;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        background: #fff;
+        box-shadow: 0 4px 4px rgb(14 55 54 / 14%);
+        border-top: 2px solid var(--main-color);
+        transition: 0.2s;
+        text-align: left;
+    }
+
+    .navbar.active{
+        top: 100%
+    }
+
+    .navbar a{
+        padding: 1.5rem;
+        display: block;
+        color: var(--second-color);
+    }
+    .home-text span{
+        font-size: 0.9rem;
+    }
+    .home-text h1{
+        font-size: 2.4rem;
+    }
+    .home-text h2{
+        font-size: 1.2rem;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .home-text{
+        padding-top: inherit;
+    }
+    .product-container .box{
+        margin-top: 6rem;
+    }
+    .heading h1{
+        font-size: 1.5rem;
+    }
+    .heading span{
+        font-size: 0.9rem;
+    }
+    .lokasi{
+        flex-direction: column-reverse;
+    }
+}
+
